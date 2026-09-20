@@ -1,0 +1,4 @@
+# Stage 5 only — install separately from requirements.txt.
+# Also requires a working Vivado HLS / Vitis HLS install on PATH; hls4ml
+# drives that toolchain, pip cannot install it for you.
+hls4ml>=0.8.0

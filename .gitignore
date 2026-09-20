@@ -1,0 +1,35 @@
+# Real WiFi credentials — copy secrets.h.example to secrets.h locally
+secrets.h
+
+# Arduino IDE / arduino-cli build output
+build/
+*.bin
+*.elf
+*.map
+
+# If you run the training/conversion pipeline locally in this clone:
+# collected data (Stage 3), trained model (Stage 4), Python venv, tooling cruft
+data/
+models/
+.venv/
+tools/__pycache__/
+tools/*.pyc
+
+# If you rebuild the Vivado project locally: generated project output
+# (only the .bd, .xdc, and exported .xsa under vivado/ are tracked)
+vivado/*.xpr
+vivado/*.cache/
+vivado/*.gen/
+vivado/*.hw/
+vivado/*.ip_user_files/
+vivado/*.runs/
+vivado/*.sim/
+vivado/.Xil/
+vivado/NA/
+vivado/vivado*.jou
+vivado/vivado*.log
+vivado/webtalk*.jou
+vivado/webtalk*.log
+
+# If you rebuild the Vitis bare-metal app locally in this clone
+vitis_workspace/
